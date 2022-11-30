@@ -23,7 +23,7 @@ socket.on('roomUsers', ({room, users})=>{
 })
 
 socket.on('message', mes => {
-    console.log(mes)
+    console.log(mes.text)
     outputMessage(mes)
     //Scroll the buttom of the page
     chatMessages.scrollTop = chatMessages.scrollHeight;
